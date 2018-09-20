@@ -80,5 +80,5 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:laughing429/lyuww.git
-  branch: master
+  branch: gh-pages
 
