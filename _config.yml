@@ -82,3 +82,7 @@ deploy:
   repo: git@github.com:laughing429/lyuww.git
   branch: gh-pages
 
+# Markdown-it config
+#markdown: 'zero'
+#markdown: 'default'
+markdown: 'commonmark'
