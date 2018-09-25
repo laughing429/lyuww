@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="lyuww&#39;Home">
 <meta property="og:description" content="机器学习的山呼海啸 在2006年，Geoffrey Hinton等学者发表了一篇论文，展示了如何训练一个深度神经网络以领先的准确率（98%）去识别出手写数字。他们标榜这个技术为“深度学习”。自20世纪90年代以来，训练一个深度神经网络在当时广泛被认为是不可能的，因此大部分的研究者就放弃了这个想法。这篇论文重新唤起了科学界的兴趣，不久之后，许多新论文表明，深度学习不仅是可能的，而且能够带来令人兴奋的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-25T09:15:12.351Z">
+<meta property="og:updated_time" content="2018-09-25T12:00:54.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前言">
 <meta name="twitter:description" content="机器学习的山呼海啸 在2006年，Geoffrey Hinton等学者发表了一篇论文，展示了如何训练一个深度神经网络以领先的准确率（98%）去识别出手写数字。他们标榜这个技术为“深度学习”。自20世纪90年代以来，训练一个深度神经网络在当时广泛被认为是不可能的，因此大部分的研究者就放弃了这个想法。这篇论文重新唤起了科学界的兴趣，不久之后，许多新论文表明，深度学习不仅是可能的，而且能够带来令人兴奋的">
@@ -355,10 +355,10 @@
 可能你想给你自制的机器人一个它自己的大脑？使它识别各种各样的脸？或者学习在周围走动？
 或者可能你公司有成千上万的数据（用户日志，财务数据，产品数据，机器传感器数据，热线统计，人力资源报告等等），如果你能知道到哪里去查看，很大的可能你能发掘一些隐藏的宝藏。例如：</p>
 <ul>
-<li>分割顾客来发现最好的市场策略来服务每一组</li>
-<li>基于相似客户的购买来推荐产品给每一个客户</li>
-<li>识别哪一个交易可能是诈骗</li>
-<li>预测下一年的收入</li>
+<li>分割顾客来发现最好的市场策略来服务每一组。</li>
+<li>基于相似客户的购买来推荐产品给每一个客户。</li>
+<li>识别哪一个交易可能是诈骗。</li>
+<li>预测下一年的收入。</li>
 <li>and more</li>
 </ul>
 <p>无论是什么理由，我已经决定学习机器学习，然后在你的项目中实施。太棒了的主意了！</p>
@@ -368,7 +368,35 @@
 我们将使用已经开发完好的python框架：</p>
 <ul>
 <li>Scikit-Learn使用起来非常简单，并且它能很高效的实施许多机器学习算法，因此它为学习机器学习提供了很好的切入点。</li>
-<li>TensorFlow是一个复杂的软件库</li>
+<li>TensorFlow是一个更复杂的库，用于使用数据流图进行分布式数值计算。它使得运用成千上万的GPU服务来高效的训练和运行非常大的神经网络成为可能。Tensorflow被创建于Google，支持许多他们大规模的机器学习应用。它在2015年11月被开源。</li>
+</ul>
+<p>本书更偏向于亲自动手的方法，通过对具体的工作例子和一点点理论，来对机器学习增加直观的理解。但是你能不用拿起你的笔记本电脑读这本书，我们强烈的建议你使用Jupyter notebook来实验<a href="https://github.com/ageron/handson-ml" target="_blank" rel="noopener">https://github.com/ageron/handson-ml</a>上的代码例子。</p>
+<h1>先决条件</h1>
+<p>这本书假设你已经有python编程经验，并且你已经对python的主要科学库比较熟悉，特别是<a href="http://www.numpy.org/" target="_blank" rel="noopener">Numpy</a>，<a href="https://pandas.pydata.org/" target="_blank" rel="noopener">Pandas</a>和<a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib</a>。</p>
+<p>如果你关心原理是什么，那么你应该对大学数学有一个合理的理解（微积分，线性代数，概率论和统计学）</p>
+<p>如果你还不知道python，<a href="http://learnpython.org/" target="_blank" rel="noopener">http://learnpython.org/</a>是一个好的地方去开始。官方<a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener">python.org</a>的教程也是一个非常好的地方。</p>
+<p>如果你从来没用过Jupyter,第二章将从引导你从安装到进行一些基本的操作：在你的工具箱中它是一个很棒的工具。</p>
+<p>如果你对Python的科学库不熟悉，提供的jupyter notebook包含一些教程。也有一个简短的线性代数教程。</p>
+<h1>线路图</h1>
+<p>这本书被组织为两部分。第一部分，机器学习的基础，包含一下的话题：</p>
+<ul>
+<li>什么是机器学习？它尝试解决什么问题？机器学习系统的主要策略和基本概念是什么？</li>
+<li>一个典型的机器学习项目的主要步骤。</li>
+<li>学习如何使用数据拟合模型。</li>
+<li>优化损失函数。</li>
+<li>处理，清洗和预处理数据。</li>
+<li>选择和特征工程。</li>
+<li>选择一个模型，并使用交叉验证调参。</li>
+<li>机器学习的主要挑战，特别是欠拟合和过拟合（偏差/方差权衡）。</li>
+<li>减少训练数据的维度来对抗维度灾难。</li>
+<li>最常用的学习算法：线性和多项式回归，logistic回归，KNN，支持向量机，决策树，随机森林和集成学习方法。</li>
+</ul>
+<p>第二部分，神经网络和深度学习，包含下列主题：</p>
+<ul>
+<li>什么是神经网络？它们擅长什么？</li>
+<li>使用Tensorflow搭建和训练神经网络。</li>
+<li>最重要神经网络架构：前馈神经网络，卷积神经网络，循环神经网络，长短期记忆网络和自动编码器。</li>
+<li></li>
 </ul>
 <p>--未完待续--</p>
 
@@ -555,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">机器学习的山呼海啸</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">项目中的机器学习</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">目标和方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">机器学习的山呼海啸</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">项目中的机器学习</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">目标和方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">先决条件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">线路图</span></a></li></ol></div>
             
 
           </div>
