@@ -60,7 +60,27 @@ categories: 翻译
 * 什么是神经网络？它们擅长什么？
 * 使用Tensorflow搭建和训练神经网络。
 * 最重要神经网络架构：前馈神经网络，卷积神经网络，循环神经网络，长短期记忆网络和自动编码器。
-* 
+* 训练深度神经网络的技术。
+* 扩展神经网络来适应巨大的数据集。
+* 强化学习
 
---未完待续--
- 
+第一部分几乎基于Scikit-Learn，第二部分使用Tensorflow。
+> 不要匆忙的跳到深水学习中：毫无疑问深度学习是机器学习中最令人兴奋的领域，你应该首先掌握基础。而且，大部分的问题能运用简单的技术去非常好的解决，例如随机森林和及集成学习方法。深度学习最合适于复杂问题，例如图像识别，语音识别或者自然语言处理，只要提供给你足够的数据，计算能力和耐心。
+
+# 其他资源
+在学习机器学习上有许多的资源可以利用。Andrew Ng在[Coursera上的机器学习课程](https://www.coursera.org/learn/machine-learning/)，Geoffrey Hinton的[关于神经网络和深度学习课程](https://www.coursera.org/learn/neural-networks)是非常精彩的，尽管他们都需要投入大量的时间（想想几个月）。
+
+也有很多有趣的关于机器学习的网站，包括Scikit-Learn中优秀的[用户指南](http://scikit-learn.org/stable/user_guide.html)。你可能喜欢[Dataquest](https://www.dataquest.io/)，它提供了非常有趣的交互式教程和机器学习博客，例如那些在[Quora](http://goo.gl/GwtU3A)上展示出的。最后，[Deep Learning website](http://deeplearning.net/)也有陈列了一些好的资源去学习更多的知识。
+
+当然也有许多其他介绍机器学习的书，尤其是：
+
+* Joel Grus, 《[Data Science from Scratch ](http://shop.oreilly.com/product/0636920033400.do)》（O’Reilly）。这本书呈现了机器学习的基础和用纯python实现了一些主要的算法（从小白，就像它的书名）。
+* Stephen Marsland，《Machine Learning: An Algorithmic Perspective》。这本书是一本很棒的介绍机器学习的书籍，深度的覆盖了一些话题，并且用python实现了一些代码用例。
+* Sebastian Raschka，《Python Machine Learning 》。也是一本很棒的介绍机器学习的书籍，这本书完全利用了python的开源库。
+* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin,《Learning from
+Data 》。作为机器学习的理论方法，这本书提供了一个深度的见解，特别是在偏差/方差权衡上。
+* Stuart Russell and Peter Norvig，《Artifcial Intelligence: A Modern Approach》。这是一本很棒很宏伟的书，不可思议的覆盖了大量的话题，包括机器学习。它使得机器学习是如此的透彻。
+
+最终，一个很帮的学习方式是参加机器学习比赛，例如[Kaggle](https://www.kaggle.com/)，这个将允许实践你的技能在真是世界的问题上，在那里你能得到最好的机器学习专家的帮助和见解。
+
+> 前言里面的一些感谢的内容就不翻译了,希望读者在发现错误后能在我的[github](https://github.com/laughing429/lyuww)上给我留言，感谢。
