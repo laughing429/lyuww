@@ -34,6 +34,6 @@ categories: 翻译
 
 ![machine learning approach](machine_learning_approach.png)
 
-
+另一个机器学习闪光的领域是，传统算法太过于复杂并且不知道运用什么算法。例如，思考一下语音识别：
 
 --未完待续--
