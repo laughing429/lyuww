@@ -1,5 +1,6 @@
 ---
 title: 前言
+date: 2018-09-24 16:41:00
 tags: Hands On Machine Learning with Scikit Learn and TensorFlow
 categories: 翻译
 ---
